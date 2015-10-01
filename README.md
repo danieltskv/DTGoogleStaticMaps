@@ -38,7 +38,7 @@ DTStaticMapRequest *request = [[DTStaticMapRequest alloc] initWithApiKey:@"API_K
 }];
 ```
 
-You can use `DTStaticMapDownloader` to download the image, or — use the `endpoint` method in the `DTStaticMapRequest` class to get the request's URL object. You can then download the image with a preferred library (such as [SDWebImage](https://github.com/rs/SDWebImage/)). For Example:
+You can use `DTStaticMapDownloader` to download the image, or — use the `endpoint` method in the `DTStaticMapRequest` class to get the request's URL object. You can then download the image with a preferred library. For Example (using [SDWebImage](https://github.com/rs/SDWebImage/)):
 ```objective-c
 [imageView sd_setImageWithURL:[request endpoint]];
 ```
